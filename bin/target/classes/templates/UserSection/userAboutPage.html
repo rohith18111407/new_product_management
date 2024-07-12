@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+        }
+
+        body {
+            background-color: #f0f0f0;
+        }
+
+        /* Navbar */
+        header {
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            align-items: center; /* Center items vertically */
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li:first-child {
+            margin-left: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        #logout-button {
+            margin-left: 800px; /* Pushes the logout button to the right end */
+        }
+
+        main {
+            max-width: 800px;
+            margin: 100px auto 20px; /* Adjust margin top to accommodate fixed navbar */
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: green;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .about-section {
+            margin-bottom: 30px;
+        }
+
+        .about-section h2 {
+            color: green;
+            margin-bottom: 10px;
+        }
+
+        .about-section p {
+            color: #212529;
+        }
+
+        .about-section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .about-section ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="head">
+            <nav>
+                <ul>
+                    <li><a href="/user/about">About</a></li>
+                    <li><a href="/user/jpa/products">Products</a></li>
+                    <li><a href="/user/contact">Contact</a></li>
+                    <li><a href="/user/cart">Cart</a></li>
+                    <li id="logout-button"><a href="/logout">Logout</a></li>
+                    <!--
+                    <li><span th:text="${username}"></span></li> <!-- Display username -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>About Our Web Application</h1>
+        <section class="about-section">
+            <h2>Goal</h2>
+            <p>Our goal is to develop a robust product management website leveraging modern technologies and best practices. Powered by Spring Boot, Thymeleaf, Spring Security, JWT tokens, and H2 in-memory database, our application aims to deliver a seamless user experience with enhanced security and performance.</p>
+        </section>
+        
+        <section class="about-section">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Efficient Product Management</li>
+                <li>User-Friendly Interface</li>
+                <li>Enhanced Security</li>
+                <li>Scalable Database Solution</li>
+                <li>Exception Handling and Logging</li>
+                <li>Documentation and Testing</li>
+                <li>Continuous Improvement</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
